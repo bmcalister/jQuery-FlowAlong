@@ -39,8 +39,8 @@ $([selector]).flowalong();
 
 ## Options
 Currently there are two Options you can specify
-* Opacity
-* Delay
+* opacity (0 - 1)
+* duration (animation duration in ms)
 
 I might add some more later.
 

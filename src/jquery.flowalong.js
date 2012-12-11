@@ -4,7 +4,7 @@
   // set default variables
   //
   var defaults = {  
-    delay: 80,
+    duration: 80,
     opacity: 1
   };  
 
@@ -33,7 +33,7 @@
         var x = (w/2)-(e.pageX - offset.left);
         var y = (h/2)-(e.pageY - offset.top);
         
-        // calculate angle to center
+        // calculate angle to center of div
         //
         var angle = Math.atan((h/2)/(w/2))*(180/Math.PI);   
         var direction = Math.atan(y/x)*(180/Math.PI);
@@ -45,22 +45,22 @@
           $(this).find('.flowalong-hover').css({'left' : w*(-1), 'top': 0});
           $(this).find('.flowalong-hover').animate({
               left: '0',
-          }, defaults.delay);
+          }, defaults.duration);
         }else if (direction > angle && direction < 180-angle){
           $(this).find('.flowalong-hover').css({'top': h*(-1), 'left' : 0});
           $(this).find('.flowalong-hover').animate({
             top: '0',
-          }, defaults.delay);
+          }, defaults.duration);
         }else if (direction > 180-angle && direction < 180+angle){
           $(this).find('.flowalong-hover').css({'left' : w, 'top' : 0});
           $(this).find('.flowalong-hover').animate({
             left: '0',
-          }, defaults.delay);
+          }, defaults.duration);
         }else{
           $(this).find('.flowalong-hover').css({'top': h, 'left' : 0});
           $(this).find('.flowalong-hover').animate({
             top: '0',
-          }, defaults.delay); 
+          }, defaults.duration); 
         }
       },
       // mouseout animation
@@ -74,19 +74,19 @@
         if (e.pageX >= offset.left+w){
           $(this).find('.flowalong-hover').animate({
               left: w,
-            }, defaults.delay);
+            }, defaults.duration);
         }else if(e.pageX <= offset.left){
           $(this).find('.flowalong-hover').animate({
               left: w*(-1),
-            }, defaults.delay);      
+            }, defaults.duration);      
         }else if(e.pageY >= offset.top+h){
           $(this).find('.flowalong-hover').animate({
               top: h,
-            }, defaults.delay);  
+            }, defaults.duration);  
         }else{
           $(this).find('.flowalong-hover').animate({
             top: h*(-1),
-            }, defaults.delay);  
+            }, defaults.duration);  
         }
       }
     ); 
