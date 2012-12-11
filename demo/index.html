@@ -1,0 +1,215 @@
+<html>
+<head>
+	<title>FlowAlong Demo</title>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script type="text/javascript" src="../src/jquery.flowalong.js" /></script>
+
+	<style>
+		body{margin:0;padding:0;font-family:Helvetica,Arial,sans-serif;}
+
+		#container{
+			margin:0 auto;
+			width:800px;
+		}
+
+		.flowalong-box, .flowalong-hover{
+			width:200px;
+			height:120px;
+			float:left;
+		}
+
+		.flowalong-hover-text a{
+			width:100%;
+			height:100%;
+			display:block;
+			position:absolute;
+			z-index:100;
+		}
+
+		.flowalong-hover-text span{
+			position:absolute;
+			top:75px;
+			left:8px;
+			background:rgba(0,0,0,0.85);
+			padding:4px;
+			color:#FFF;
+			font-weight: bold;
+			font-size:12px;
+		}
+	</style>
+
+</head>
+<body>
+	<div id="container">
+		<h1>FlowAlong Demos</h1>
+
+		<h2>Image Hover</h2>
+
+		<div id="flowalong-images">
+
+			<div class="flowalong-box">
+				<img src="img/d1.png" />
+				<div class="flowalong-hover">
+					<a href="#"><img src="img/hover.png" /></a>
+				</div>
+			</div>
+
+			<div class="flowalong-box">
+				<img src="img/d2.png" />
+				<div class="flowalong-hover">
+					<a href="#"><img src="img/hover.png" /></a>
+				</div>
+			</div>
+
+			<div class="flowalong-box">
+				<img src="img/d3.png" />
+				<div class="flowalong-hover">
+					<a href="#"><img src="img/hover.png" /></a>
+				</div>
+			</div>
+
+			<div class="flowalong-box">
+				<img src="img/d4.png" />
+				<div class="flowalong-hover">
+					<a href="#"><img src="img/hover.png" /></a>
+				</div>
+			</div>
+
+			<div class="flowalong-box">
+				<img src="img/d5.png" />
+				<div class="flowalong-hover">
+					<a href="#"><img src="img/hover.png" /></a>
+				</div>
+			</div>
+
+			<div class="flowalong-box">
+				<img src="img/d6.png" />
+				<div class="flowalong-hover">
+					<a href="#"><img src="img/hover.png" /></a>
+				</div>
+			</div>
+
+			<div class="flowalong-box">
+				<img src="img/d7.png" />
+				<div class="flowalong-hover">
+					<a href="#"><img src="img/hover.png" /></a>
+				</div>
+			</div>
+
+			<div class="flowalong-box">
+				<img src="img/d8.png" />
+				<div class="flowalong-hover">
+					<a href="#"><img src="img/hover.png" /></a>
+				</div>
+			</div>
+
+		</div>
+
+		<div style="clear:both;"></div>
+
+		<h2>Text Hover</h2>
+
+		<div id="flowalong-text">
+
+			<div class="flowalong-box">
+				<img src="img/d1.png" />
+				<div class="flowalong-hover">
+					<div class="flowalong-hover-text">
+						<a href="#"></a>
+						<span>Put your Text here!</span>
+					</div>
+				</div>
+			</div>
+
+			<div class="flowalong-box">
+				<img src="img/d2.png" />
+				<div class="flowalong-hover">
+					<div class="flowalong-hover-text">
+						<a href="#"></a>
+						<span>and here...</span>
+					</div>
+				</div>
+			</div>
+
+			<div class="flowalong-box">
+				<img src="img/d3.png" />
+				<div class="flowalong-hover">
+					<div class="flowalong-hover-text">
+						<a href="#"></a>
+						<span>here also.</span>
+					</div>
+				</div>
+			</div>
+
+			<div class="flowalong-box">
+				<img src="img/d4.png" />
+				<div class="flowalong-hover">
+					<div class="flowalong-hover-text">
+						<a href="#"></a>
+						<span>oh here too!</span>
+					</div>
+				</div>
+			</div>
+
+			<div class="flowalong-box">
+				<img src="img/d5.png" />
+				<div class="flowalong-hover">
+					<div class="flowalong-hover-text">
+						<a href="#"></a>
+						<span>whatever</span>
+					</div>
+				</div>
+			</div>
+			<div class="flowalong-box">
+				<img src="img/d6.png" />
+				<div class="flowalong-hover">
+					<div class="flowalong-hover-text">
+						<a href="#"></a>
+						<span>ok</span>
+					</div>
+				</div>
+			</div>
+
+			<div class="flowalong-box">
+				<img src="img/d7.png" />
+				<div class="flowalong-hover">
+					<div class="flowalong-hover-text">
+						<a href="#"></a>
+						<span>don't you?!</span>
+					</div>
+				</div>
+			</div>
+
+			<div class="flowalong-box">
+				<img src="img/d8.png" />
+				<div class="flowalong-hover">
+					<div class="flowalong-hover-text">
+						<a href="#"></a>
+						<span>you get it..</span>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+		<div style="clear:both;"></div>
+
+	</div>
+
+	<script>
+		$(document).ready(function(){
+
+			$("#flowalong-images").flowalong({
+				opacity: 0.65,
+				delay: 120
+			});
+
+			$("#flowalong-text").flowalong({
+				opacity: 0.9,
+				delay: 300
+			});
+
+		});
+	</script>
+</body>
+</html>
