@@ -4,8 +4,8 @@
   // set default variables
   //
   var defaults = {  
-    delay: 50,
-    opacity: 0.85
+    delay: 80,
+    opacity: 1
   };  
 
   // extend default variables with user input
