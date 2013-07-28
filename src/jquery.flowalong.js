@@ -1,3 +1,13 @@
+/**
+ * jquery.FlowAlong v 1.01
+ *
+ * Licensed under the MIT license.
+ * http://www.opensource.org/licenses/mit-license.php
+ * 
+ * Copyright 2013, Brian Mc Alister
+ * http://www.lemu.ch
+ */
+
 (function($){  
  $.fn.flowalong = function(options) {  
   

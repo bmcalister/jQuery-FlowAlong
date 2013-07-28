@@ -57,4 +57,5 @@ Be sure to style the two classes ".flowalong-box" and ".flowalong-hover" yoursel
 
 
 * * *
-Copyright (c) 2012 Brian Mc Alister
+Copyright (c) 2013 Brian Mc Alister
+Licensed under the MIT License
